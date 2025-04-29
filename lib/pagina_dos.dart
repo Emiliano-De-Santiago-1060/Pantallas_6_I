@@ -8,19 +8,41 @@ class PantallaDos extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Pantalla 2',
+          'Pantalla 4',
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
         backgroundColor: Colors.black, // Fondo rojo
         centerTitle: true, // Centrar el texto
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Regresar'),
-        ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            child: AboutListTile(
+              icon: Icon(Icons.info),
+              applicationIcon: FlutterLogo(),
+              applicationLegalese: 'Legalese',
+              applicationName: 'Flutter App',
+              applicationVersion: 'version 1.0.0',
+              aboutBoxChildren: [
+                Text('This is a text created by Flutter Mapp'),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text('Regresar'),
+            ),
+          ),
+        ],
       ),
     );
   }

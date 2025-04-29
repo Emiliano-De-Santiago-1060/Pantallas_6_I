@@ -27,9 +27,41 @@ class PantallaUno extends StatelessWidget {
           Center(
             child: ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/pantalla3');
+                Navigator.pushNamed(context, '/pantalla4');
               },
-              child: const Text('Pantalla tres'),
+              child: const Text('Pantalla Cuatro'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla6');
+              },
+              child: const Text('Pantalla Seis'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla8');
+              },
+              child: const Text('Pantalla Ocho'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla10');
+              },
+              child: const Text('Pantalla Diez'),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla12');
+              },
+              child: const Text('Pantalla Doce'),
             ),
           ),
         ],
